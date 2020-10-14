@@ -1,26 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import GoogleMapReact from "google-map-react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+	const API_KEY = process.env.REACT_APP_API_KEY;
+
+	return (
+		<div style={{height: "100vh", width: "100%"}}>
+			{/* <GoogleMapReact></GoogleMapReact> */}
+			{API_KEY}
+		</div>
+	);
 }
 
 export default App;
+
+//Google Maps in React - Building interactive maps
+//https://www.youtube.com/watch?v=Pf7g32CwX_s
+
+//Clustering data in Google Maps and React
+//https://www.youtube.com/watch?v=-NI5e_GTIko
